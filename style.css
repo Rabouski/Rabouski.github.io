@@ -1,0 +1,124 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+
+  margin: 0;
+  height: 100vh;
+
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.button1 {
+  border: 1px solid white;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.button1:hover {
+  background: white;
+  color: black;
+}
+
+.button1:active {
+  transform: scale(0.95);
+}
+
+.video-container {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  width: 300px;
+  height: 172px;
+  border: 5px solid white;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.text-container {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style the content */
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skibidi {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  position: auto;
+  top: 350px;
+  right: 350px;
+}
+
+.text-skibidi {
+  position: auto;
+  bottom: 220px;
+  left: 370px;
+}
+
+.songs {
+  text-decoration: none;
+  color: white;
+  font-size: 160%;
+  position: relative;
+  left: 800px;
+  bottom: 200px;
+}
+
+.songs a {
+  text-decoration: none;
+  color: white; 
+}
+
+.hund {
+  position: relative;
+  left: 860px;
+  bottom: 700px;
+}
